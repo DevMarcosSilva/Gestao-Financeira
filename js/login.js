@@ -4,3 +4,10 @@ function coleta_de_dados(){
     alert(`credenciais sao: ${nome} ${senha}`)
 
 }
+
+function redirecionar(){
+    window.location.href= "home.html"
+}
+function redirecionar_login(){
+    window.location.href= "login.html"
+}

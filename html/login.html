@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestao Financeira</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/login.css">
 </head>
 
 <body>
     <header>
-        <h1>Gestao Financeira</h1>
+        <h1>Gestão Financeira</h1>
     </header>
 
     <div class="login-container" id="login-container" >
         <h2>Login</h2>
+        <form action="login-form" method="post">
             <input id="first_name" type="text" placeholder="E-mail" name="first_name" class="form-control" required>
             <input id="last_name" type="password" placeholder="Senha" name="last_name" class="form-control" required>
-            <button id="botao" onclick="coleta_de_dados()"> CONFIRMAR </button>
+            <button  type="submit"  id="botao" onclick="coleta_de_dados(); redirecionar()" > CONFIRMAR </button>
+        </form>    
     </div>
-    <script src="home.js"></script>
+    <script src="/js/login.js"></script>
 </body>
