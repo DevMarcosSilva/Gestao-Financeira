@@ -17,7 +17,7 @@
         <form action="login-form" method="post">
             <input id="first_name" type="text" placeholder="E-mail" name="first_name" class="form-control" required>
             <input id="last_name" type="password" placeholder="Senha" name="last_name" class="form-control" required>
-            <button  type="submit"  id="botao" onclick="coleta_de_dados(); redirecionar()" > CONFIRMAR </button>
+            <button  type="submit"  id="botao" onclick="handleSubmit(event)" > CONFIRMAR </button>
         </form>    
     </div>
     <script src="/js/login.js"></script>
