@@ -6,9 +6,34 @@
     <title>HOME</title>
 </head>
 <body>
-    <h1>Olá </h1>
-    <button onclick="redirecionar_login()">Sair</button>
+    <h1>Olá $nome$</h1>
+    <div>
+        <!-- Formulário -->
+        <form action="/submit" method="POST">
+            <!-- Escolha entre Entrada ou Saída -->
+            <label>Selecione o Tipo</label>
+            <div>
+                <input type="radio" id="entrada" name="tipo" value="entrada" required>
+                <label for="entrada">Entrada</label>
+                
+                <input type="radio" id="saida" name="tipo" value="saida">
+                <label for="saida">Saída</label>
+            </div>
+
+            <!-- Valor -->
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" name="valor" placeholder="R$ 0,00" required>
+
+            <!-- Descrição -->
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" name="descricao" placeholder="Digite a descrição" required>
+
+            <!-- Botão de Confirmação -->
+            <button type="button" onclick="exibir()">CONFIRMAR</button>
+        </form>
+    </div>
+    <button onclick="">Sair</button>
 </body>
 
-<script src="/js/login.js"></script>
+<script src="/js/grid.js"></script>
 </html>
